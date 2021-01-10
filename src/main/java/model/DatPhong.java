@@ -1,49 +1,85 @@
 package model;
 
 public class DatPhong {
-    private String ngayvao, ngaydi;
-    private int songuoi;
-    private double giathue;
+   private int idPhong, idUser, idHomeStay, trangthai, soNguoi;
+   private String ngayDen, ngayDi;
+   private double thanhtoan;
 
-    public DatPhong(String ngayvao, String ngaydi, int songuoi, double giathue) {
-        this.ngayvao = ngayvao;
-        this.ngaydi = ngaydi;
-        this.songuoi = songuoi;
-        this.giathue = giathue;
+    public DatPhong(int idPhong, int idUser, int idHomeStay, int trangthai, int soNguoi, String ngayDen, String ngayDi, double thanhtoan) {
+        this.idPhong = idPhong;
+        this.idUser = idUser;
+        this.idHomeStay = idHomeStay;
+        this.trangthai = trangthai;
+        this.soNguoi = soNguoi;
+        this.ngayDen = ngayDen;
+        this.ngayDi = ngayDi;
+        this.thanhtoan = thanhtoan;
     }
 
     public DatPhong() {
     }
 
-    public String getNgayvao() {
-        return ngayvao;
+    public int getIdPhong() {
+        return idPhong;
     }
 
-    public void setNgayvao(String ngayvao) {
-        this.ngayvao = ngayvao;
+    public void setIdPhong(int idPhong) {
+        this.idPhong = idPhong;
     }
 
-    public String getNgaydi() {
-        return ngaydi;
+    public int getIdUser() {
+        return idUser;
     }
 
-    public void setNgaydi(String ngaydi) {
-        this.ngaydi = ngaydi;
+    public void setIdUser(int idUser) {
+        this.idUser = idUser;
     }
 
-    public int getSonguoi() {
-        return songuoi;
+    public int getIdHomeStay() {
+        return idHomeStay;
     }
 
-    public void setSonguoi(int songuoi) {
-        this.songuoi = songuoi;
+    public void setIdHomeStay(int idHomeStay) {
+        this.idHomeStay = idHomeStay;
     }
 
-    public double getGiathue() {
-        return giathue;
+    public int getTrangthai() {
+        return trangthai;
     }
 
-    public void setGiathue(double giathue) {
-        this.giathue = giathue;
+    public void setTrangthai(int trangthai) {
+        this.trangthai = trangthai;
+    }
+
+    public int getSoNguoi() {
+        return soNguoi;
+    }
+
+    public void setSoNguoi(int soNguoi) {
+        this.soNguoi = soNguoi;
+    }
+
+    public String getNgayDen() {
+        return ngayDen;
+    }
+
+    public void setNgayDen(String ngayDen) {
+        this.ngayDen = ngayDen;
+    }
+
+    public String getNgayDi() {
+        return ngayDi;
+    }
+
+    public void setNgayDi(String ngayDi) {
+        this.ngayDi = ngayDi;
+    }
+
+    public double getThanhtoan() {
+        return thanhtoan;
+    }
+
+    public void setThanhtoan(double thanhtoan) {
+        this.thanhtoan = thanhtoan;
     }
 }

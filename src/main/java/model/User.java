@@ -1,9 +1,48 @@
 package model;
 
 public class User {
+    private int id, role;
     private String name, age, email, password, acount, phonenumber, address;
 
+    public User(String name, String age, String email, String password, String acount, String phonenumber, String address) {
+        this.name = name;
+        this.age = age;
+        this.email = email;
+        this.password = password;
+        this.acount = acount;
+        this.phonenumber = phonenumber;
+        this.address = address;
+    }
+
+    public User(int id, int role, String name, String age, String email, String password, String acount, String phonenumber, String address) {
+        this.id = id;
+        this.role = role;
+        this.name = name;
+        this.age = age;
+        this.email = email;
+        this.password = password;
+        this.acount = acount;
+        this.phonenumber = phonenumber;
+        this.address = address;
+    }
+
     public User() {
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getRole() {
+        return role;
+    }
+
+    public void setRole(int role) {
+        this.role = role;
     }
 
     public String getName() {
@@ -21,7 +60,6 @@ public class User {
     public void setAge(String age) {
         this.age = age;
     }
-
 
     public String getEmail() {
         return email;
@@ -63,20 +101,18 @@ public class User {
         this.address = address;
     }
 
-    public User(String name, String age, String email, String password, String acount, String phonenumber, String address) {
-        this.name = name;
-        this.age = age;
-        this.email = email;
-        this.password = password;
-        this.acount = acount;
-        this.phonenumber = phonenumber;
-        this.address = address;
-    }
-
-    public User(String email, String password, String acount, String phonenumber) {
-        this.email = email;
-        this.password = password;
-        this.acount = acount;
-        this.phonenumber = phonenumber;
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", role=" + role +
+                ", name='" + name + '\'' +
+                ", age='" + age + '\'' +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", acount='" + acount + '\'' +
+                ", phonenumber='" + phonenumber + '\'' +
+                ", address='" + address + '\'' +
+                '}';
     }
 }
