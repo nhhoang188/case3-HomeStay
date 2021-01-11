@@ -1,11 +1,22 @@
 package model;
 
+import java.util.List;
+
 public class HomeStay {
     private int homestayID;
     private int sophong;
     private String tenhomestay, diachi, sdt, tienich;
     private double giaphong;
     private String anh, anh1, anh2, anh3, thongtin, thongtin1, thongtin2, thongtin3;
+    private List<HomeStay> homeStayList;
+
+    public List<HomeStay> getHomeStayList() {
+        return homeStayList;
+    }
+
+    public void setHomeStayList(List<HomeStay> homeStayList) {
+        this.homeStayList = homeStayList;
+    }
 
     public HomeStay(int homestayID, String tenhomestay, String diachi, String sdt, double giaphong, int sophong, String tienich, String anh, String anh1, String anh2, String anh3, String thongtin, String thongtin1, String thongtin2, String thongtin3) {
         this.homestayID = homestayID;
