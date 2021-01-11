@@ -108,7 +108,7 @@ URL: https://freehtml5.co
                                 class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="Contact_us.jsp">Contact <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="contact">Contact <span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
             </div>
